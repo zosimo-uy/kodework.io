@@ -1,0 +1,89 @@
+*{
+ padding:0 ;
+ margin: 0;
+ box-sizing: border-box;
+ color: whitesmoke;
+}
+
+html{
+  width: 100%;
+}
+
+body{
+  background-color: #393430;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.Logo{
+  width: 125px;
+  height: 75px;
+  margin-left: 30px;
+}
+
+#Home{
+  background-image: linear-gradient(rgba(255, 255, 255,0.25),
+  rgba(0,0,0,0.75)), url(/Images/Developer1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; font-size: 80px;
+}
+
+#Second{
+  margin-left: 10%;
+  color: whitesmoke;
+}
+
+#Third{
+background-image: linear-gradient(rgba(255, 255, 255,0.25),
+rgba(0,0,0,0.75)), url(/Images/dev3.jpg);;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+#Third .card, #Third .card-header{
+  background: rgba(0,0,0,0.02);
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+}
+
+#Third a{
+  text-decoration: none;
+  float: right;
+}
+
+#Third a:hover{
+  transition: 0.85s;
+  scale: 110%;
+
+}
+
+#Fourth, #Fifth{
+  background-color: #393430;
+  color: #393430;
+}
+
+#Fourth .row, #Fifth .row{
+  background: #393430;
+}
+
+#Fourth .card, #Fourth .list-group-item, #Fourth .card-text, #Fifth .card, #Fifth .list-group-item, #Fifth .card-text{
+  color: #393430;
+}
+
+#Fourth .card-header, #Fifth .card-header{
+  color: whitesmoke;
+  text-decoration: none;
+}
+#Fourth .bNone, #Fifth .bNone{
+  border: none;
+}
+
