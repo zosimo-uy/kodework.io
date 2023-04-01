@@ -39,3 +39,9 @@
   color: #393430;
 }
 
+#Service .card-header{
+  border-radius: none;
+  background-color: transparent;
+  text-decoration: none;
+}
+

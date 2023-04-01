@@ -32,7 +32,8 @@ section{
   rgba(0,0,0,0.35)), url(/Images//Homepage/Developer1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; font-size: 80px;
+  background-attachment: fixed; 
+  font-size: 80px;
 }
 
 #Second{
