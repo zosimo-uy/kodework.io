@@ -4,10 +4,243 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="Style/services.css">
   <title>Services</title>
 </head>
 
 <body>
+  <section id="Landing">
+    <div class="row ms-4">
+      <div class="col">
+        <h2 class="display-1">
+          Efficient and cost-friendly solutions
+          <br>
+          Get the most of our advanced tools and technologies.
+          </h2>
+      </div>
+        <div class="row">
+          <h4 class="display-5">Get your project done right.</h4>
+        </div>
+    </div>
+  </section>
+
+  <section id="Services">
+    <div class="row">
+      <div class="col-md">
+        <div class="card bg-transparent bNone p-3">
+          <div class="card-header display-4 fw-semibold text-light">
+            Find the perfect service for your needs.
+          </div>
+          
+  <div class="row" id="serviceType">
+    <div class="col-md-6 my-3">
+      <div class="card p-2">
+        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+        <div class="card-body">
+          <h5 class="card-title text-center p-2 fw-bold">Website</h5>
+          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <ul class="list-group list-group-flush webList">
+            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
+          </ul>
+          <hr>
+        <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#serviceRequest"
+        data-bs-whatever="@mdo"> REQUEST HELP WITH A WEBSITE &rightarrow;</button>
+
+        <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h1 class="modal-title fs-5" id="ContactLabel">Scope of work</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark text-light">
+              <form id="contactForm" action="">
+                <div class="mb-3">
+                  <label for="modalName" class="col-form-label">Name:</label>
+                  <input type="text" name="modalName" class="form-control" id="modalName" required>
+                  <label for="modalEmail" class="col-form-label">Email:</label>
+                  <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="modalText"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Send message</button>
+            </div>
+          </form>
+
+          </div>
+        </div>
+      </div>
+
+          <!-- <a href="#" class="card-link btn btn-warning float-end fs-5"><i class="bi bi-cart-check text-dark me-2"></i>Checkout</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 my-3">
+      <div class="card p-2">
+        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+        <div class="card-body">
+          <h5 class="card-title text-center p-2 fw-bold">Web Apps</h5>
+          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <ul class="list-group list-group-flush webList">
+            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
+          </ul>
+          <hr>
+          <button class="btn btn-success float-end" id="serviceRequest"  data-bs-toggle="modal" data-bs-target="#serviceRequest"
+        data-bs-whatever="@mdo"> REQUEST HELP WITH A WEB APP &rightarrow;</button>
+
+        <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h1 class="modal-title fs-5" id="ContactLabel">Message</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark text-dark">
+              <form id="contactForm" action="">
+                <div class="mb-3">
+                  <label for="modalName" class="col-form-label">Name:</label>
+                  <input type="text" name="modalName" class="form-control" id="modalName" required>
+                  <label for="modalEmail" class="col-form-label">Email:</label>
+                  <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="modalText"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Send message</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+
+          <!-- <button class="card-link btn btn-warning float-end fs-5" type="button"><i class="bi bi-cart-check text-dark me-2"></i>Checkout</button> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 my-3">
+      <div class="card p-2">
+        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+        <div class="card-body">
+          <h5 class="card-title text-center p-2 fw-bold"><u>Website</u>Web portals</h5>
+          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <ul class="list-group list-group-flush webList">
+            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
+          </ul>
+          <hr>
+          <button class="btn btn-success float-end" id="serviceRequest"  data-bs-toggle="modal" data-bs-target="#serviceRequest"
+        data-bs-whatever="@mdo"> REQUEST HELP WITH A WEB PORTAL &rightarrow;</button>
+
+        <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h1 class="modal-title fs-5" id="ContactLabel">Message</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark text-dark">
+              <form id="contactForm" action="">
+                <div class="mb-3">
+                  <label for="modalName" class="col-form-label">Name:</label>
+                  <input type="text" name="modalName" class="form-control" id="modalName" required>
+                  <label for="modalEmail" class="col-form-label">Email:</label>
+                  <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="modalText"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Send message</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+
+          <!-- <a href="#" class="card-link btn btn-warning float-end fs-5"><i class="bi bi-cart-check text-dark me-2"></i>Checkout</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 my-3">
+      <div class="card p-2">
+        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+        <div class="card-body">
+          <h5 class="card-title text-center p-2 fw-bold"><u>Website</u>Ecommerce</h5>
+          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <ul class="list-group list-group-flush webList">
+            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
+          </ul>
+          <hr>
+          <button class="btn btn-success float-end" id="serviceRequest"  data-bs-toggle="modal" data-bs-target="#serviceRequest"
+        data-bs-whatever="@mdo"> REQUEST HELP WITH AN ECOMMERCE SOLUTION &rightarrow;</button>
+
+        <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h1 class="modal-title fs-5" id="ContactLabel">Message</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark text-dark">
+              <form id="contactForm" action="">
+                <div class="mb-3">
+                  <label for="modalName" class="col-form-label">Name:</label>
+                  <input type="text" name="modalName" class="form-control" id="modalName" required>
+                  <label for="modalEmail" class="col-form-label">Email:</label>
+                  <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="modalText"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-success">Send message</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+
+          <!-- <a href="#" class="card-link btn btn-warning float-end fs-5"><i class="bi bi-cart-check text-dark me-2"></i>Checkout</a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+  
+          
+          </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="Perks">
+    
+  </section>
+<script src="service.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   
 </body>
 </html>
