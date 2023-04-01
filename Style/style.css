@@ -28,8 +28,8 @@ section{
 }
 
 #Home{
-  background-image: linear-gradient(rgba(255, 255, 255,0.25),
-  rgba(0,0,0,0.75)), url(/Images//Homepage/Developer1.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255,0.15),
+  rgba(0,0,0,0.85)), url(/Images//Homepage/Developer1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; font-size: 80px;
