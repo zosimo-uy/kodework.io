@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-let modalInfo =[];
-
-const modalName = document.getElementById(`modalName`);
-const modalEmail = document.getElementById(`modalEmail`);
-const modalText = document.getElementById(`modalText`);
-
-function captureModal(){
-
-  let contactInfo = {
-    id: Math.floor(Math.random() * 1000000),
-    modalName :  modalName.value,
-    modalEmail :  modalEmail.value,
-    modalText :  modalText.value
-  };
-
-  let storedContacts = localStorage.getItem('RequestForm');
-
-  let contactForms = storedContacts ? JSON.parse(storedContacts) : []; 
-  contactForms.push(contactInfo);
-
-  
-  localStorage.setItem(`RequestForm`, JSON.stringify(contactForms));
-=======
 //store the data into an array
 let modalInfo =[];
 
@@ -52,22 +28,16 @@ function captureModal(){
   /* created variable for ternary condition parsing a JSON object to text format to Javascript object from the LocalStorage
   pushing another object using the variable of contactinfo*/
   let contactForms = storedContacts ? JSON.parse(storedContacts) : []; 
-  contactForms.push(contactInfo);
+  contactForms.push(contactInfo); 
 
-    // Store data for setting the item into a RequestForm  category
+  // Store data for setting the item into a RequestForm  category
     localStorage.setItem(`RequestForm`, JSON.stringify(contactForms));
->>>>>>> 7c699fc234ec6e398bb5b633cda28b537ceb61e5
 }
 
 window.onload = function (){
   let contactForm = document.getElementById(`contactForm`);
   contactForm.onsubmit = captureModal;
-<<<<<<< HEAD
 };
-=======
-};
-
-//End of Line for Storing data
 
 
 //AutoFill for Data-base-what-ever
@@ -134,4 +104,3 @@ serviceModal4.addEventListener('show.bs.modal', event => {
   modalTitle.textContent = `Request for a ${recipient}`
   modalBodyInput.value = recipient
 })
->>>>>>> 7c699fc234ec6e398bb5b633cda28b537ceb61e5
