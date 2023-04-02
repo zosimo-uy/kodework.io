@@ -1,16 +1,25 @@
+//store the data into an array
 let modalInfo =[];
 
+// call the actual ID from the HTML element
 const modalName = document.getElementById(`modalName`);
 const modalEmail = document.getElementById(`modalEmail`);
 const modalText = document.getElementById(`modalText`);
+const modalFullName = document.getElementById(`modalFullName`);
+const modalPhoneNumber = document.getElementById(`modalPhoneNumber`);
+const modalLocation = document.getElementById(`modalLocation`);
 
 function captureModal(){
 
+  // stored Object in array form includes object titles and object values
   let contactInfo = {
-    id: Math.floor(Math.random() * 1000000),
-    modalName :  modalName.value,
-    modalEmail :  modalEmail.value,
-    modalText :  modalText.value
+    RequestID: Math.floor(Math.random() * 1000000),
+    Subject :  modalName.value,
+    ClientFullName: modalFullName.value,
+    ClientEmail :  modalEmail.value,
+    ClienPhoneNumber :  modalPhoneNumber.value,
+    ClientLocation :  modalLocation.value,
+    ClientMessage :  modalText.value,
   };
 
   // created variable for calling out the RequestForm inside the local storage 
@@ -30,6 +39,10 @@ window.onload = function (){
   contactForm.onsubmit = captureModal;
 };
 
+//End of Line for Storing data
+
+
+//AutoFill for Data-base-what-ever
 //input default for data-bs-whatever value
 const serviceModal = document.getElementById('serviceRequest');
 const serviceModal2 = document.getElementById('serviceRequest2');

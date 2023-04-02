@@ -30,264 +30,335 @@
     <div class="row">
       <div class="col-md">
         <div class="card bg-transparent p-3">
-          <div class="card-title display-4 fw-semibold text-light">
-            Get the most of our advanced tools and technologies.
+          <div class="card-title display-5 text-light">
+            <strong><i>Get the most of our advanced tools and technologies.</i></strong>
             <!-- Find the perfect service for your needs. -->
           </div>
           
-  <div class="row" id="serviceType">
-    <div class="col-md-6 my-3">
-      <div class="card p-2">
-        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
-        <div class="card-body">
-          <h5 class="card-title text-center p-2 fw-bold">Website</h5>
-          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul class="list-group list-group-flush webList">
-            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
-          </ul>
-          <hr>
-        <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#serviceRequest"
-        data-bs-whatever="Website"> REQUEST HELP WITH A WEBSITE &rightarrow;</button>
-
-      <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header bg-dark">
-                <h1 class="modal-title fs-5" id="ContactLabel"></h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row" id="serviceType">
+            <div class="col-md-6 my-3">
+              <div class="card p-2">
+                <img src="/Images/Services/website.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                <div class="card-body">
+                  <h5 class="card-title text-center p-2 fw-bold">Website</h5>
+                  <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group list-group-flush webList">
+                    <li class="list-group-item text-end fs-6 fw-semibold">&checkmark; Verified</li>
+                  </ul>
+                  <hr>
+                  <!-- Start of Modal button -->
+                <button class="btn btn-success float-end shadow" data-bs-toggle="modal" data-bs-target="#serviceRequest"
+                data-bs-whatever="Website">REQUEST HELP WITH A WEBSITE &rightarrow;</button>
+        <!-- Shows when the modal button is selected -->
+              <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <!-- Appearing Modal -->
+                  <div class="modal-content w-100">
+                      <div class="modal-header bg-dark">
+                        <h1 class="modal-title fs-5" id="ContactLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <!-- Modal Body that's inside the modal content -->
+                        <div class="modal-body p-5 bg-dark text-light">
+                          <form id="contactForm" action="">
+                              <div class="row mb-3 g-0">
+                                <label for="modalName" class="col-form-label fs-5 fw-bold">Subject:</label>
+                                <input type="text" name="modalName" class="form-control p-1 mb-3" id="modalName" required>
+                                <input type="text" name="modalName" class="form-control mb-3" id="modalFullName" placeholder="Fullname*" required>
+                                <input type="email" name="modalName" class="form-control mb-3" id="modalEmail" placeholder="Email address*" required>
+                                <input type="text" name="modalName" class="form-control mb-3 me-3 w-25" id="modalPhoneNumber" placeholder="Phone*" required>
+                                <input type="text" name="modalName" class="form-control mb-3 w-50" id="modalLocation" placeholder="Location">
+                              </div>
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="modalText"></textarea>
+                              </div>
+                        </div>
+                          <div class="modal-footer bg-dark">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Send message</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
               </div>
-                <div class="modal-body bg-dark text-light">
-                  <form id="contactForm" action="">
-                      <div class="mb-3">
-                        <label for="modalName" class="col-form-label">Subject:</label>
-                        <input type="text" name="modalName" class="form-control" id="modalName" required>
-                        <label for="modalEmail" class="col-form-label">Email:</label>
-                        <input type="email" name="modalName" class="form-control" id="modalEmail" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="modalText"></textarea>
-                      </div>
+        <!-- End of Modal function -->
                 </div>
-                  <div class="modal-footer bg-dark">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success">Send message</button>
+              </div>
+            </div>
+
+            <div class="col-md-6 my-3">
+              <div class="card p-2">
+                <img src="/Images/Services/webapp.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                <div class="card-body">
+                  <h5 class="card-title text-center p-2 fw-bold">Web Apps</h5>
+                  <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group list-group-flush webList">
+                    <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
+                  </ul>
+                  <hr>
+                  <button class="btn btn-success float-end shadow" data-bs-toggle="modal" data-bs-target="#serviceRequest2" data-bs-whatever="Web Apps">REQUEST HELP WITH A WEB APP &rightarrow;</button>
+
+                <div class="modal fade" id="serviceRequest2" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                      <h1 class="modal-title fs-5" id="ContactLabel">Message</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark text-dark">
+                      <form id="contactForm" action="">
+                        <div class="row mb-3 g-0">
+                          <label for="modalName" class="col-form-label fs-5 fw-bold">Subject:</label>
+                          <input type="text" name="modalName" class="form-control p-1 mb-3" id="modalName" required>
+                          <input type="text" name="modalName" class="form-control mb-3" id="modalFullName" placeholder="Fullname*" required>
+                          <input type="email" name="modalName" class="form-control mb-3" id="modalEmail" placeholder="Email address*" required>
+                          <input type="text" name="modalName" class="form-control mb-3 me-3 w-25" id="modalPhoneNumber" placeholder="Phone*" required>
+                          <input type="text" name="modalName" class="form-control mb-3 w-50" id="modalLocation" placeholder="Location">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="modalText"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-success">Send message</button>
+                    </div>
+                  </form>
                   </div>
-                </form>
-            </div>
-         </div>
-      </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 my-3">
-      <div class="card p-2">
-        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
-        <div class="card-body">
-          <h5 class="card-title text-center p-2 fw-bold">Web Apps</h5>
-          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul class="list-group list-group-flush webList">
-            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
-          </ul>
-          <hr>
-          <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#serviceRequest2" data-bs-whatever="Web Apps">REQUEST HELP WITH A WEB APP &rightarrow;</button>
-
-        <div class="modal fade" id="serviceRequest2" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark">
-              <h1 class="modal-title fs-5" id="ContactLabel">Message</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-dark">
-              <form id="contactForm" action="">
-                <div class="mb-3">
-                  <label for="modalName" class="col-form-label">Name:</label>
-                  <input type="text" name="modalName" class="form-control" id="modalName" required>
-                  <label for="modalEmail" class="col-form-label">Email:</label>
-                  <input type="email" name="modalName" class="form-control" id="modalEmail" required>
                 </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="modalText"></textarea>
+              </div>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer bg-dark">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-success">Send message</button>
-            </div>
-          </form>
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-6 my-3">
-      <div class="card p-2">
-        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
-        <div class="card-body">
-          <h5 class="card-title text-center p-2 fw-bold">
-            Web portals</h5>
-          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul class="list-group list-group-flush webList">
-            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
-          </ul>
-          <hr>
-          <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#serviceRequest3"
-        data-bs-whatever="Web portals"> REQUEST HELP WITH A WEB PORTAL &rightarrow;</button>
+            <div class="col-md-6 my-3">
+              <div class="card p-2">
+                <img src="/Images/Services/webportal.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                <div class="card-body">
+                  <h5 class="card-title text-center p-2 fw-bold">
+                    Web portals</h5>
+                  <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group list-group-flush webList">
+                    <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
+                  </ul>
+                  <hr>
+                  <button class="btn btn-success float-end shadow" data-bs-toggle="modal" data-bs-target="#serviceRequest3"
+                data-bs-whatever="Web portals"> REQUEST HELP WITH A WEB PORTAL &rightarrow;</button>
 
-        <div class="modal fade" id="serviceRequest3" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark">
-              <h1 class="modal-title fs-5" id="ContactLabel">Message</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-dark">
-              <form id="contactForm" action="">
-                <div class="mb-3">
-                  <label for="modalName" class="col-form-label">Name:</label>
-                  <input type="text" name="modalName" class="form-control" id="modalName" required>
-                  <label for="modalEmail" class="col-form-label">Email:</label>
-                  <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                <div class="modal fade" id="serviceRequest3" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                      <h1 class="modal-title fs-5" id="ContactLabel">Message</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark text-dark">
+                      <form id="contactForm" action="">
+                        <div class="row mb-3 g-0">
+                          <label for="modalName" class="col-form-label fs-5 fw-bold">Subject:</label>
+                          <input type="text" name="modalName" class="form-control p-1 mb-3" id="modalName" required>
+                          <input type="text" name="modalName" class="form-control mb-3" id="modalFullName" placeholder="Fullname*" required>
+                          <input type="email" name="modalName" class="form-control mb-3" id="modalEmail" placeholder="Email address*" required>
+                          <input type="text" name="modalName" class="form-control mb-3 me-3 w-25" id="modalPhoneNumber" placeholder="Phone*" required>
+                          <input type="text" name="modalName" class="form-control mb-3 w-50" id="modalLocation" placeholder="Location">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="modalText"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-success">Send message</button>
+                    </div>
+                  </form>
+                  </div>
                 </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="modalText"></textarea>
+              </div>
+
                 </div>
+              </div>
             </div>
-            <div class="modal-footer bg-dark">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-success">Send message</button>
-            </div>
-          </form>
-          </div>
-        </div>
-      </div>
 
-        </div>
-      </div>
-    </div>
+            <div class="col-md-6 my-3">
+              <div class="card p-2">
+                <img src="/Images/Services/ecommerce.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                <div class="card-body">
+                  <h5 class="card-title text-center p-2 fw-bold">Ecommerce</h5>
+                  <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-group list-group-flush webList">
+                    <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
+                  </ul>
+                  <hr>
+                  <button class="btn btn-success float-end shadow" data-bs-toggle="modal" data-bs-target="#serviceRequest4"
+                data-bs-whatever="Ecommerce"> REQUEST HELP WITH AN ECOMMERCE SOLUTION &rightarrow;</button>
 
-    <div class="col-md-6 my-3">
-      <div class="card p-2">
-        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
-        <div class="card-body">
-          <h5 class="card-title text-center p-2 fw-bold">Ecommerce</h5>
-          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul class="list-group list-group-flush webList">
-            <li class="list-group-item text-end fs-6 fw-semibold">&checkmark;  Verified</li>
-          </ul>
-          <hr>
-          <button class="btn btn-success float-end" data-bs-toggle="modal" data-bs-target="#serviceRequest4"
-        data-bs-whatever="Ecommerce"> REQUEST HELP WITH AN ECOMMERCE SOLUTION &rightarrow;</button>
-
-        <div class="modal fade" id="serviceRequest4" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark">
-              <h1 class="modal-title fs-5" id="ContactLabel"></h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-dark">
-              <form id="contactForm" action="">
-                <div class="mb-3">
-                  <label for="modalName" class="col-form-label">Name:</label>
-                  <input type="text" name="modalName" class="form-control" id="modalName" required>
-                  <label for="modalEmail" class="col-form-label">Email:</label>
-                  <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                <div class="modal fade" id="serviceRequest4" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                      <h1 class="modal-title fs-5" id="ContactLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark text-dark">
+                      <form id="contactForm" action="">
+                        <div class="mb-3">
+                          <div class="row mb-3 g-0">
+                            <label for="modalName" class="col-form-label fs-5 fw-bold">Subject:</label>
+                            <input type="text" name="modalName" class="form-control p-1 mb-3" id="modalName" required>
+                            <input type="text" name="modalName" class="form-control mb-3" id="modalFullName" placeholder="Fullname*" required>
+                            <input type="email" name="modalName" class="form-control mb-3" id="modalEmail" placeholder="Email address*" required>
+                            <input type="text" name="modalName" class="form-control mb-3 me-3 w-25" id="modalPhoneNumber" placeholder="Phone*" required>
+                            <input type="text" name="modalName" class="form-control mb-3 w-50" id="modalLocation" placeholder="Location">
+                          </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="modalText"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-success">Send message</button>
+                    </div>
+                  </form>
+                  </div>
                 </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Message:</label>
-                  <textarea class="form-control" id="modalText"></textarea>
-                </div>
-            </div>
-            <div class="modal-footer bg-dark">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-success">Send message</button>
-            </div>
-          </form>
-          </div>
-        </div>
-      </div>
+              </div>
 
-          <!-- <a href="#" class="card-link btn btn-warning float-end fs-5"><i class="bi bi-cart-check text-dark me-2"></i>Checkout</a> -->
+                  <!-- <a href="#" class="card-link btn btn-warning float-end fs-5"><i class="bi bi-cart-check text-dark me-2"></i>Checkout</a> -->
+                </div>
+              </div>
+            </div>
+            </div>
         </div>
       </div>
     </div>
   </div>
-  
-          </div>
-      </div>
-  
-    </div>
   </section>
 
   <section id="Perks">
     <div class="row">
       <div class="col-md">
-        <div class="card bg-transparent bNone p-3">
+        <div class="card bg-transparent p-3">
 
-          <div class="card-header display-4 fw-semibold">
+          <div class="card-title display-5">
             <strong><i>Our perks for our partners</i></strong>
           </div>
-  <div class="row">
-    <div class="col-md my-3">
-      <div class="card p-2">
-        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul class="list-group list-group-flush webList">
-            <li class="list-group-item text-end fs-6 fw-semibold">Verified</li>
-          </ul>
-          <hr>   
-          <a href="#" class="card-link btn btn-primary">Grab this!</a>
-          <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
-        </div>
-      </div>
-    </div>
+            <div class="row">
+              <div class="col-md-6 my-3">
+                <div class="card p-2 shadow-md">
+                  <img src="/Images/Services/archi.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bolder">Architecture</h5>
+                    <p class="card-text fs-5">Architects will plan all functional components and select optimal methods for them. They will also map all API connections within the web solution and with outside systems.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">
+                        Web architects with 10+ years of experience
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-    <div class="col-md my-3">
-      <div class="card p-2">
-        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul class="list-group list-group-flush webList">
-            <li class="list-group-item text-end fs-6 fw-semibold">Verified</li>
-          </ul>
-          <hr>   
-          <a href="#" class="card-link btn btn-primary">Grab this!</a>
-          <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
-        </div>
-      </div>
-    </div>
+              <div class="col-md-6 my-3">
+                <div class="card p-2">
+                  <img src="/Images/Services/uiux.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">UX and UI Design</h5>
+                    <p class="card-text fs-5">We start designing a web app with the analysis of target audience and planning convenient, quick and frictionless user journeys. They join in to wrap the interface into a stylish cover.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">20+ UX and UI Designers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-    <div class="col-md my-3 me-3">
-      <div class="card p-2">
-        <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <ul class="list-group list-group-flush webList">
-            <li class="list-group-item text-end fs-6 fw-semibold">Verified</li>
-          </ul>
-          <hr>   
-          <a href="#" class="card-link btn btn-primary">Grab this!</a>
-          <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
+              <div class="col-md-6 my-3">
+                <div class="card p-2">
+                  <img src="/Images/Services/integration.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Integration</h5>
+                    <p class="card-text fs-5">We set up APIs to integrate your web app with corporate or third-party systems and services. App integration ensures immediate data synchronization across systerns.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">30+ API Specialists</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 my-3">
+                <div class="card p-2">
+                  <img src="/Images/Services/frontend.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Front-end development</h5>
+                    <p class="card-text fs-5">Our front-end developers can implement any design idea and ensure all interface elements work property. We work with all most-used JavaScript frameworks.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">
+                        40+ front-end developers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 my-3">
+                <div class="card p-2">
+                  <img src="/Images/Services/backend.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Back-End development</h5>
+                    <p class="card-text fs-5">Our developers accurately implement the business logic of your web app on the back end. We rely on proven frameworks and ensure fast and quality coding in .Net, Java, etc.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">
+                        20+ Back-End developers
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 my-3">
+                <div class="card p-2">
+                  <img src="/Images/Services/testing.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Testing and QA</h5>
+                    <p class="card-text fs-5">We guarantee that your web solution will function flawlessly, work fast, be user-friendly and secure. We have a team of skilled testing engineers to make promises like that.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">
+                        60+ Testing Engineers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 my-3">
+                <div class="card p-2">
+                  <img src="/Images/Services/business.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Business Analysis</h5>
+                    <p class="card-text fs-5">They focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution. They also bridge the gap between business stakeholders and an IT team to keep all the involved parties.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">30+ Business Analysts</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 my-3">
+                <div class="card p-2">
+                  <img src="/Images/Services/support.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Help desk</h5>
+                    <p class="card-text fs-5">Providing L1, L2 and L3 support services, we deliver hot-fixes within 24 hours to prevent or resolve any issues in usage, technology and code that may arise. We help you provide high availability and trouble-free functionality of your web app.</p>
+                    <ul class="list-group list-group-flush webList">
+                      <li class="list-group-item text-center text-primary fs-6 fw-semibold">30+ Business Analysts</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>  
         </div>
       </div>
-    </div>
-  </div>
-          
-          </div>
-      </div>
-  
     </div>
   </section>
 
