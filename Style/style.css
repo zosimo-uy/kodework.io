@@ -28,21 +28,36 @@ section{
 }
 
 #Home{
+<<<<<<< HEAD
   background-image: linear-gradient(rgba(255, 255, 255,0.25),
   rgba(0,0,0,0.75)), url(/Images//Homepage/Developer1.jpg);
+=======
+  background-image: linear-gradient(rgba(0, 0, 0,0.05),
+  rgba(0,0,0,0.35)), url(/Images//Homepage/Developer1.jpg);
+>>>>>>> 7c699fc234ec6e398bb5b633cda28b537ceb61e5
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; font-size: 80px;
+  background-attachment: fixed; 
+  font-size: 80px;
 }
 
 #Second{
-  margin-left: 10%;
   color: whitesmoke;
+  min-height: 75vh;
+}
+
+#Second .kodePhrase{
+ margin-left: 12%;
 }
 
 #Third{
+<<<<<<< HEAD
 background-image: linear-gradient(rgba(255, 255, 255,0.25),
 rgba(0,0,0,0.75)), url(/Images/HomePage/dev3.jpg);;
+=======
+background-image: linear-gradient(rgba(0, 0, 0,0.15),
+rgba(0,0,0,0.85)), url(/Images/HomePage/dev3.jpg);;
+>>>>>>> 7c699fc234ec6e398bb5b633cda28b537ceb61e5
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -53,17 +68,16 @@ background-size: cover;
   border: none;
   border-radius: none;
   text-decoration: none;
+  background: transparent;
 }
 
 #Third a{
   text-decoration: none;
-  float: right;
 }
 
 #Third a:hover{
   transition: 0.85s;
   scale: 110%;
-
 }
 
 #Fourth, #Fifth{
@@ -79,11 +93,9 @@ background-size: cover;
   color: #393430;
 }
 
-#Fourth .card-header, #Fifth .card-header{
+#Fourth .card-header, #Fifth .card-header, #Fourth .bNone, #Fifth .bNone{
   color: whitesmoke;
   text-decoration: none;
-}
-#Fourth .bNone, #Fifth .bNone{
   border: none;
 }
 
