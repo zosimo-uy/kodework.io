@@ -37,11 +37,6 @@
 
 #Services .card, #Fourth .list-group-item, #Services .card-text, #Perks .card, #Perks .list-group-item, #Perks .card-text{
   color: #393430;
-<<<<<<< HEAD
-}
-
-=======
-  border:none;
 }
 
 #Service .card-header, #Perks .card-header{
@@ -49,4 +44,3 @@
   background-color: transparent;
   text-decoration: none;
 }
->>>>>>> 7c699fc234ec6e398bb5b633cda28b537ceb61e5
