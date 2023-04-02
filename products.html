@@ -6,15 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="/Style/style1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <title>KodeWork HomePage</title>
+  <link rel="stylesheet" href="/Style/nav_foot.css">
 </head>
 <body class="container-fluid">
 
-  <nav class="navbar">
-    <a href="" class="navbar-brand Logo"><img src="KodeWorkLogo.JPG" class="img-fluid" alt="KodeWork"></a>
-  </nav>
+    <nav class="navbar navbar-expand-md bg-white" ;>
+        <div class="container-fluid flex-row-reverse">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" >
+                <i class="bi bi-list text-dark"></i>
+            </button>
+        
+            <div class="d-flex ">
+            <img src="/Images/Logos/KodeWorkLogo.JPG" class="logo" alt="">
+            </div>
 
-  <section id="Home">
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="navbar-nav fw-semibold ">
+                  
+                  <li class="nav-item me-lg-3 text mt-1 ">
+                    <a class="nav-link hover1 btn-lg active1" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-item me-lg-3 text mt-1">
+                    <a class="nav-link hover1 btn-lg " aria-current="page" href="product.html">Services</a>
+                  </li>
+                
+                  <li class="nav-item me-lg-3 text mt-1">
+                    <a class="nav-link hover1 btn-lg " href="about.html">Products</a>
+                  </li>
+    
+                  <li class="nav-item me-lg-3 text mt-1">
+                    <a class="nav-link hover1 btn-lg " href="customerf.html">About Us</a>
+                  </li>
+    
+                  <li class="nav-item me-lg-3 text mt-1">
+                    <a class="nav-link hover1 btn-lg " href="#contacts">Login</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+  <section class="section" id="Home">
     <div class="row ms-4">
       <div class="col">
         <h2 class="display-1">
@@ -29,7 +64,7 @@
     </div>
   </section>
 
-    <div id="Second" class="secondSection container m-5">
+    <div id="Second" class="secondSection container m-0 ">
         <div class="row ms-lg-5">
             <div class="card-header">
             <span class="col-sm text-secondary"><h2>Unmatched Design And Layout</h2>
@@ -43,11 +78,12 @@
             </div>
         </div>
     </div>
+    <br>
     
   <!-- CONTENT -->
     
 
-    <div class="container my-lg-5 ">
+    <div class="container mt-sm-5 " id="Third" >
         <div class="row text-light mx-2" id="galleries">
             <div class="col-sm-12 p-lg-5 ">
                 <div>
@@ -131,7 +167,8 @@
                 </button>
                 </div>
                 <div class="clickHere mb-md-5 mb-sm-52">
-                <a href="">Buy This Template?</a>
+                <a class="clickHere" data-bs-toggle="modal" data-bs-target="#serviceRequest"
+                data-bs-whatever="">Buy This Template?</a>
                 </div >
 
                 <!-- number 2 -->
@@ -202,7 +239,8 @@
                 </button>
                 </div>
                 <div class="clickHere">
-                    <a href="">Buy This Template?</a>
+                    <a class="clickHere" data-bs-toggle="modal" data-bs-target="#serviceRequest"
+                    data-bs-whatever="">Buy This Template?</a>
                 </div >
                 <!-- number 3 -->
                 <div class="mt-lg-5 mt-md-5 mt-sm-5">
@@ -293,7 +331,8 @@
                 </button>
                 </div>
                 <div class="clickHere">
-                    <a href="">Buy This Template?</a>
+                    <a class="clickHere" data-bs-toggle="modal" data-bs-target="#serviceRequest"
+                    data-bs-whatever="">Buy This Template?</a>
                 </div >
                 <!-- number4 -->
 
@@ -365,7 +404,8 @@
                 </button>
                 </div>
                 <div class="clickHere">
-                    <a href="">Buy This Template?</a>
+                    <a class="clickHere" data-bs-toggle="modal" data-bs-target="#serviceRequest"
+                    data-bs-whatever="">Buy This Template?</a>
                 </div >
                 <!-- number5 -->
 
@@ -457,15 +497,146 @@
                 </button>
                 </div>
                 <div class="clickHere">
-                    <a href="">Buy This Template?</a>
+                    <a data-bs-toggle="modal" data-bs-target="#serviceRequest"
+                    data-bs-whatever="" class="clickHere">Buy This Template?</a>
                 </div >
             </div>
         </div>
     </div>
 
-    
+    <!-- Shows when the modal button is selected -->
+    <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <!-- Appearing Modal -->
+        <div class="modal-content w-100">
+            <div class="modal-header bg-dark">
+                <h1 class="modal-title fs-5" id="ContactLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Body that's inside the modal content -->
+                <div class="modal-body p-5 bg-dark text-light">
+                <form id="contactForm" action="">
+                    <div class="row mb-3 g-0">
+                        <label for="modalName" class="col-form-label fs-5 fw-bold">Credit Card and Debit Card details:</label>
+                        <input type="text" name="modalName" class="form-control mb-3 w-100" id="modalCard" placeholder="Card number" required>
 
-  <script src="index.js"></script>
+                        <label for="modalExpiration" class="col-form-label fs-5 fw-bold w-50">Expiration Date:</label>
+                        <label for="modalCVC" class="col-form-label fs-5 fw-bold w-50">Security Code:</label>
+
+                        <input type="date" name="modalName" class="form-control mb-3 w-50" id="modalExpiration" placeholder="Expiration Date" required>
+
+                        <input type="text" name="modalName" class="form-control mb-3 w-50" id="modalCVC" placeholder="CVC" required>
+
+
+                        <label for="modalName" class="col-form-label fs-5 fw-bold">Personal Details:</label>
+                        <input type="text" name="modalName" class="form-control mb-3" id="modalFullName" placeholder="Fullname*" required>
+                        <input type="email" name="modalName" class="form-control mb-3" id="modalEmail" placeholder="Email address*" required>
+
+                        <input type="text" name="modalName" class="form-control   w-100 mb-3" id="modalLocation" placeholder="Full Address*" required>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="modalText"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Confirm</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal function -->
+    <br>
+    <div class="container-fluid  p-0">
+        <a name="contacts" ></a>
+        <footer class="text-center text-lg-start" style="background-color:beige;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-3 tfooter2" >
+          <!-- Left -->
+          <div class="me-5 me-sm-3">
+            <span>Get connected with us on social networks:</span>
+          </div>
+  
+          <!-- Right -->
+          <div >
+            <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+              <i class="bi bi-messenger"></i>
+            </a>
+            <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+              <i class="bi bi-google"></i>
+            </a>
+            <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </section>
+  
+        <!-- Section: Links  -->
+        <section>
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold ftext">KODEWORK</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+                <p class="ftext">
+                    Our platform makes finding the right service quick and easy. Search for qualified professionals by language or skill set to get exactly what you're looking for.
+                </p>
+              </div>
+  
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold ftext">Useful links</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+                <p>
+                  <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-bookmark-heart-fill ftext"></i></i> Subscribe</a>
+                </p>
+                <p>
+                  <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-shop-window ftext"></i>Web Template</a>
+                </p>
+                <p>
+                  <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-truck-front-fill ftext"></i>Services</a>
+                </p>
+                <p>
+                  <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-info-circle-fill ftext"></i> Help</a>
+                </p>
+              </div>
+  
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- contact information -->
+                <h6 class="text-uppercase fw-bold ftext">Contact</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+                <p class="ftext"><i class="bi bi-house-heart-fill ftext color"></i> Capiz, Roxas City, Philippines</p>
+                <p class="ftext"><i class="bi bi-envelope-heart ftext"></i> kodework2023@gmail.com</p>
+                <p class="ftext"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 901234488012</p>
+                <p class="ftext"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 987654321123 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Copyright -->
+        <div class="row tfooter2 m-0 pt-2">
+         <div class="col-sm-6 copyl"><p >©Copyright All Rights Reserve 2023</p></div>
+          <div class="col-sm-6 copyr"><p >Privacy Policy/Terms of Use</p></div>
+        </div>
+      </footer>
+    </div>
+  
+
+  <script src="product.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
