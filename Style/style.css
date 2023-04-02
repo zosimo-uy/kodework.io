@@ -83,11 +83,9 @@ background-size: cover;
   color: #393430;
 }
 
-#Fourth .card-header, #Fifth .card-header{
+#Fourth .card-header, #Fifth .card-header, #Fourth .bNone, #Fifth .bNone{
   color: whitesmoke;
   text-decoration: none;
-}
-#Fourth .bNone, #Fifth .bNone{
   border: none;
 }
 

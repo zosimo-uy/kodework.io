@@ -32,14 +32,14 @@
   <section id="Second">
     <div class="row kodePhrase">
       <div class="card-header">
-        <span class="col-sm text-secondary"><h2>Unmatched speed of delivery.</h2>
+        <span class="col-sm text-secondary
+        "><h2>Unmatched speed of delivery.</h2>
     </div>
     <div class="card-body">
         <span class="col-sm">
-          <h2 class="card-title text-info display-4 w-75" id="animationOne"
-          onscroll="animationWrite()">What Kode Work Offers?</h2>
+          <h2 class="card-title text-info display-4 w-75" id="animationOne">What Kode Work Offers?</h2>
         </span>
-        <p class="card-text text-info-emphasis fs-5 w-75">An extremely fast turnaround times, allowing you to get your project up and running as soon as possible. Whether it's a small web-page or a big business website — we have got it all done right, just the way you want it!</p>
+        <p class="card-text fs-5 w-75">An extremely fast turnaround times, allowing you to get your project up and running as soon as possible. Whether it's a small web-page or a big business website — we have got it all done right, just the way you want it!</p>
     </div>
       </div>
     </section>
@@ -64,9 +64,9 @@
               <div class="card w-100">
                 <div class="card-body bg-success  border-rounded rounded-3"">
                   <h2 class="card-title">
-                    Browse and Buy Website Templates
+                    Browse and buy website emplates
                   </h2>
-                  <a href="" class="card-link btn bg-info text-dark fs-5 float-end">Feel free to checkout &RightArrow;</a>
+                  <a href="" class="card-link btn text-light fs-5 float-end">Feel free to checkout &RightArrow;</a>
                 </div>
               </div>
             </div>
@@ -76,9 +76,9 @@
               <div class="card w-100 mb-3">
                 <div class="card-body bg-success  border-rounded rounded-3"">
                   <h2 class="card-title">
-                    Come and view Available Services
+                    Come and view available services
                   </h2>
-                  <a href="" class="card-link btn bg-info text-dark fs-5 float-end">Check our Technologies &RightArrow;</a>
+                  <a href="" class="card-link btn text-light fs-5 float-end">Check our Technologies &RightArrow;</a>
                 </div>
               </div>
             </div>
@@ -87,9 +87,9 @@
               <div class="card w-100 mb-3">
                 <div class="card-body bg-success  border-rounded rounded-3">
                   <h2 class="card-title">
-                    Let us help you with the right talent!
+                    Got a talent? Join and work with us
                   </h2>
-                  <a href="" class="card-link btn bg-info text-dark fs-5 float-end">Take the opportunity &RightArrow;</a>
+                  <a href="" class="card-link btn text-light fs-5 float-end">Take the opportunity &RightArrow;</a>
                 </div>
               </div>
             </div>
@@ -120,7 +120,6 @@
               <li class="list-group-item text-end fs-6 fw-semibold">&checkmark; Verified</li>
             </ul>
             <hr>   
-            <a href="#" class="card-link btn btn-primary">Grab this!</a>
             <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
           </div>
         </div>
@@ -129,14 +128,14 @@
       <div class="col-md my-3">
         <div class="card p-2">
           <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+          
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <ul class="list-group list-group-flush webList">
               <li class="list-group-item text-end fs-6 fw-semibold">&checkmark; Verified</li>
             </ul>
-            <hr>   
-            <a href="#" class="card-link btn btn-primary">Grab this!</a>
+            <hr>
             <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
           </div>
         </div>
@@ -151,8 +150,7 @@
             <ul class="list-group list-group-flush webList">
               <li class="list-group-item text-end fs-6 fw-semibold">&checkmark; Verified</li>
             </ul>
-            <hr>   
-            <a href="#" class="card-link btn btn-primary">Grab this!</a>
+            <hr>
             <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
           </div>
         </div>
@@ -171,7 +169,7 @@
         <div class="card bg-transparent bNone p-3">
 
           <div class="card-header display-4 fw-semibold">
-            Website for your business!
+           <i> Website for everyone</i>
           </div>
   <div class="row">
     <div class="col-md my-3">
@@ -184,8 +182,40 @@
             <li class="list-group-item text-end fs-6 fw-semibold">&checkmark; Verified</li>
           </ul>
           <hr>   
-          <a href="#" class="card-link btn btn-primary">Grab this!</a>
-          <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
+          <!-- modal form for easy access -->
+          <button class="btn btn-success float-end fw-semibold p-2" data-bs-toggle="modal" data-bs-target="#serviceRequest"
+          data-bs-whatever="Website">Start my website by messaging</button>
+
+          <div class="modal fade" id="serviceRequest" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header bg-dark">
+                    <h1 class="modal-title fs-5" id="ContactLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                    <div class="modal-body bg-dark text-light">
+                      <form id="contactForm" action="">
+                          <div class="mb-3">
+                            <label for="modalName" class="col-form-label">Subject:</label>
+                            <input type="text" name="modalName" class="form-control" id="modalName" required>
+                            <label for="modalEmail" class="col-form-label">Email:</label>
+                            <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="modalText"></textarea>
+                          </div>
+                    </div>
+                      <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Send message</button>
+                      </div>
+                    </form>
+                </div>
+             </div>
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -195,30 +225,92 @@
         <img src="/Images/Services/webapp.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate"
         style="max-height: min-content;">
         <div class="card-body">
-          <h5 class="card-title text-center fw-bolder">Web apps</h5>
+          <h5 class="card-title fs-4 text-center fw-bolder">Web apps</h5>
           <p class="card-text fs-5">You will find solutions for efficient management of different business activities. We apply smart automation to streamline workflows and integrate corporate apps together for coherent operation.</p>
           <ul class="list-group list-group-flush webList">
             <li class="list-group-item text-end fs-6 fw-semibold">&checkmark; Verified</li>
           </ul>
           <hr>   
-          <a href="#" class="card-link btn btn-primary">Grab this!</a>
-          <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
+          <!-- modal form for easy access -->
+          <button class="btn btn-success float-end fw-semibold p-2" data-bs-toggle="modal" data-bs-target="#serviceRequest2"
+          data-bs-whatever="Web app">Start my website by messaging</button>
+
+          <div class="modal fade" id="serviceRequest2" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header bg-dark">
+                    <h1 class="modal-title fs-5" id="ContactLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                    <div class="modal-body bg-dark text-light">
+                      <form id="contactForm" action="">
+                          <div class="mb-3">
+                            <label for="modalName" class="col-form-label">Subject:</label>
+                            <input type="text" name="modalName" class="form-control" id="modalName" required>
+                            <label for="modalEmail" class="col-form-label">Email:</label>
+                            <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="modalText"></textarea>
+                          </div>
+                    </div>
+                      <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success">Send message</button>
+                      </div>
+                    </form>
+                </div>
+             </div>
+          </div>
+
         </div>
       </div>
     </div>
 
-    <div class="col-md my-3 me-3" style="max-height: 600px;">
+    <div class="col-md my-3 me-3">
       <div class="card p-2">
         <img src="/Images/Services/webportal.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
         <div class="card-body">
-          <h5 class="card-title text-center fw-bolder text-break">Web portals</h5>
+          <h5 class="card-title fs-4 text-center fw-bolder text-break">Web portals</h5>
           <p class="card-text fs-5">KodeWork works with web portals for different audiences: customers, business partners. We create automatically aggregate data from corporate systems and become a source of up-to-date information and help for users.</p>
           <ul class="list-group list-group-flush webList">
             <li class="list-group-item text-end fs-6 fw-semibold">&checkmark; Verified</li>
           </ul>
           <hr>   
-          <a href="#" class="card-link btn btn-primary">Grab this!</a>
-          <a href="#" target="_blank" class="card-link btn btn-primary float-end">View more!</a>
+            <!-- modal form for easy access -->
+            <button class="btn btn-success float-end fw-semibold p-2" data-bs-toggle="modal" data-bs-target="#serviceRequest3"
+            data-bs-whatever="Web portal">Start my website by messaging</button>
+
+            <div class="modal fade" id="serviceRequest3" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                      <h1 class="modal-title fs-5" id="ContactLabel"></h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                      <div class="modal-body bg-dark text-light">
+                        <form id="contactForm" action="">
+                            <div class="mb-3">
+                              <label for="modalName" class="col-form-label">Subject:</label>
+                              <input type="text" name="modalName" class="form-control" id="modalName" required>
+                              <label for="modalEmail" class="col-form-label">Email:</label>
+                              <input type="email" name="modalName" class="form-control" id="modalEmail" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Message:</label>
+                              <textarea class="form-control" id="modalText"></textarea>
+                            </div>
+                      </div>
+                        <div class="modal-footer bg-dark">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="submit" class="btn btn-success">Send message</button>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+
         </div>
       </div>
     </div>
@@ -234,5 +326,5 @@
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-</body>
+</body>  
 </html>
