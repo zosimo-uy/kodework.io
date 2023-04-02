@@ -2,7 +2,6 @@
  padding:0 ;
  margin: 0;
  box-sizing: border-box;
- color: whitesmoke;
 }
 
 html{
@@ -34,6 +33,7 @@ section{
   background-size: cover;
   background-attachment: fixed; 
   font-size: 80px;
+  color: whitesmoke;
 }
 
 #Second{
@@ -46,11 +46,12 @@ section{
 }
 
 #Third{
-background-image: linear-gradient(rgba(0, 0, 0,0.15),
-rgba(0,0,0,0.85)), url(/Images/HomePage/dev3.jpg);;
+background-image: linear-gradient(rgba(0, 0, 0,0.30),
+rgba(0,0,0,0.30)), url(/Images/HomePage/dev3.jpg);;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+
 }
 
 #Third .card, #Third .card-header{
@@ -59,16 +60,22 @@ background-size: cover;
   border-radius: none;
   text-decoration: none;
   background: transparent;
+  color: whitesmoke;
 }
+
 
 #Third a{
   text-decoration: none;
+  background-color: #393430;
+  color: whitesmoke;
 }
 
 #Third a:hover{
-  transition: 0.85s;
-  scale: 110%;
+  background-color: whitesmoke;
+  color: #393430;
+  transition: 0.7s;
 }
+
 
 #Fourth, #Fifth{
   background-color: #393430;
@@ -83,11 +90,8 @@ background-size: cover;
   color: #393430;
 }
 
-#Fourth .card-header, #Fifth .card-header{
-  color: whitesmoke;
+#Fourth .card-header, #Fifth .card-header, #Fourth .bNone, #Fifth .bNone{
   text-decoration: none;
-}
-#Fourth .bNone, #Fifth .bNone{
   border: none;
 }
 
