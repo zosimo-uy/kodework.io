@@ -1,0 +1,112 @@
+*{
+ padding:0 ;
+ margin: 0;
+ box-sizing: border-box;
+ color: whitesmoke;
+}
+
+
+
+body{
+  background-color: #393430;
+}
+
+
+.Logo{
+  width: 125px;
+  height: 75px;
+  margin-left: 30px;
+}
+
+#Home{
+  background-image: linear-gradient(rgba(255, 255, 255,0.25),
+  rgba(0,0,0,0.75)), url(/Images//Homepage/bgproducts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; font-size: 80px;
+}
+
+
+
+/* Query */
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#Second{
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clickHere a{
+  font-size:4vw;
+  color: lightgreen;
+  display: flex;
+  justify-content: end;
+}
+
+.clickHere a:hover{
+  font-size:2vw;
+  color: whitesmoke;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+#Second{
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.clickHere a{
+  font-size:2vw;
+  color: lightgreen;
+  display: flex;
+  justify-content: end;
+}
+
+/* big screen */
+@media only screen and (min-width: 1000px) {
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  width: 100%;
+}
+#Second{
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  margin-top: 70px;
+}
+.display-2{
+  font-size: 4vw;
+}
+
+.clickHere a{
+  font-size:2vw;
+  color: lightgreen;
+  display: flex;
+  justify-content: end;
+}
