@@ -76,19 +76,9 @@ background-size: cover;
   transition: 0.7s;
 }
 
-
-#Fourth, #Fifth{
-  background-color: #393430;
+/* #Fourth .card, #Fourth .list-group-item, #Fourth .card-text, #Fifth .card, #Fifth .list-group-item, #Fifth .card-text{
   color: #393430;
-}
-
-#Fourth .row, #Fifth .row{
-  background: #393430;
-}
-
-#Fourth .card, #Fourth .list-group-item, #Fourth .card-text, #Fifth .card, #Fifth .list-group-item, #Fifth .card-text{
-  color: #393430;
-}
+} */
 
 #Fourth .card-header, #Fifth .card-header, #Fourth .bNone, #Fifth .bNone{
   text-decoration: none;
