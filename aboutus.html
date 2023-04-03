@@ -7,25 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="/Style/aboutus.css">
-  <title>KodeWork HomePage</title>
+  <link rel="stylesheet" href="Style/aboutus.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="Style/nav_foot.css">
+  <title>KodeWork AboutUs</title>
 </head>
-
+<style>
+    #Home{
+     background-image: linear-gradient(rgba(0, 0, 0,0.05),
+     rgba(0,0,0,0.35)), url(Images/AboutUS/about.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed; 
+   }
+</style>
 <body>
 
-  <nav class="navbar">
-    <a href="" class="navbar-brand Logo"><img src="KodeWorkLogo.JPG" class="img-fluid" alt="KodeWork"></a>
+
+  <nav class="navbar navbar-expand-md bg-white">
+    <div class="container-fluid flex-row-reverse">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="d-flex">
+        <img src="Images/Logos/KodeWorkLogo.JPG" class="logo" alt="" style="height: 45px;">
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="navbar-nav fw-semibold ">
+              
+              <li class="nav-item me-lg-3 text mt-1 ">
+                <a class="nav-link hover1 btn-lg active1" aria-current="page" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " aria-current="page" href="services.html">Services</a>
+              </li>
+            
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="products.html">Products</a>
+              </li>
+
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="aboutus.html">About Us</a>
+              </li>
+
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="login.html">Login</a>
+              </li>
+            </ul>
+        </div>
+    </div>
   </nav>
 
-  <section id="Home" style="color: whitesmoke;">
+  <section id="Home" style="color: whitesmoke; text-shadow: 5px 5px 12px #fff;">
     <div class="row ms-4">
       <div class="col">
-        <h2 class="display-1 ">
-          About Us
+        <h2 class="display-1">
+          Unlock your potential with Kode Work
         </h2>
-      </div>
-      <div class="row">
-        <h4 class="display-6 fw-semibold">Smart Websites, Smart Choices</h4>
       </div>
     </div>
   </section>
@@ -33,126 +74,214 @@
   <section id="Second">
     <div class="row justify-content-evenly align-content-between">
       <div class="col-md-6">
-        <h1 class="display-1">Vision</h1>
-        <p class="display-6">To be one of the top of mind business process outsourcing companies in the Philippines.</p>
+        <h1 class="display-1 fst-italic text-info text-center">Vision</h1>
+        <p class="display-6 p-3">To be one of the top of mind business process outsourcing companies in the Philippines.</p>
       </div>
       <div class="col-md-6">
-        <h1 class="display-1">Mission</h1>
-        <p class="display-6">To help our clients grow their business by providing world-class but cost-efficient
+        <h1 class="display-1 fst-italic text-info text-center">Mission</h1>
+        <p class="display-6 p-3">To help our clients grow their business by providing world-class but cost-efficient
           services in business process outsourcing through a collaborative effort among our employees, suppliers and
           partners.</p>
       </div>
     </div>
   </section>
 
-
   <section id="Fourth">
     <div class="row">
       <div class="col-md">
-        <div class="card bg-transparent bNone p-3">
-          <div class="d-flex justify-content-center align-content-center mb-5" style="color: black;">
-            <h1 class="display-1">Who are we?</h1>
+        <div class="card p-3 bg-transparent border-0">
+          <div class="d-flex justify-content-center align-content-center mb-5">
+            <h1 class="display-1 text-info"><strong>Who are we?</strong>
+            </h1>
           </div>
 
           <div class="row">
-            <div class="col-md my-3">
-              <div class="card p-2">
-                <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2" alt="WebsiteTemplate">
+            <div class="col-sm-4 my-3">
+              <div class="card bg-light shadow-lg">
+                <img src="Images/AboutUS/hero.jpg" class="card-img-top img-fluid p-2 rounded-circle" alt="Zosimo Gwapo">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
+                  <h5 class="card-title fw-semibold">Zosimo Uy Jr</h5>
+                  <p class="card-text fs-5">
+                    Started a new path! Dedicating himself to the world of programming, <a href="https://pinkdollar123.github.io/zosimouy.io/" 
+                    target="_blank">@zoscode</a> is officially starting his journey as a full-stack developer.
+                  </p>
                   <hr>
-                  <a href="#" target="_blank" class="card-link btn btn-primary float-end">View Portfolio!</a>
+                  <a href="https://pinkdollar123.github.io/zosimouy.io/" target="_blank" class="card-link btn btn-info text-dark float-end">Check out his profile</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md my-3">
-              <div class="card p-2">
-                <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2" alt="WebsiteTemplate">
+            <div class="col-sm-4 my-3">
+              <div class="card bg-light shadow-lg">
+                <img src="Images/AboutUS/gerrymaster" class="rounded-circle card-img-top img-fluid p-2" alt="WebsiteTemplate">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
+                  <h5 class="card-title fw-semibold">Gerry Mar Agustin</h5>
+                  <p class="card-text fs-5">A Full Stack Web Developer based out of Capiz. I love combining the worlds of logic and creative design, accessible, and user friendly websites and applications.</p>
                   <hr>
-                  <a href="#" target="_blank" class="card-link btn btn-primary float-end">View Portfolio!</a>
+                  <a href="https://iis0ulii.github.io/Resumer.hithub.io/" target="_blank" class="card-link btn btn-info text-dark float-end">Check my profile</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md my-3 me-3">
-              <div class="card p-2">
-                <img src="/Images/dev4.jpg" class="card-img-top img-fluid p-2" alt="WebsiteTemplate">
+            <div class="col-sm-4 my-3">
+              <div class="card bg-light shadow-lg">
+                <img src="Images/AboutUS/kristianmalupet.jpg" class="card-img-top img-fluid p-2 rounded-circle" alt="WebsiteTemplate">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text fs-5">Some quick example text to build on the card title and make up the bulk of
-                    the card's content.</p>
+                  <h5 class="card-title fw-semibold">Kristian Ivan Pineda</h5>
+                  <p class="card-text fs-5">Meet KIA, an aspiring Full-Stack developer dedicating his life to learning and exploring the vast world of programming in his new career journey.</p>
                   <hr>
-                  <a href="#" target="_blank" class="card-link btn btn-primary float-end">View Portfolio!</a>
+                  <a href="https://kiapinedaa.github.io/kia/" target="_blank" class="card-link btn btn-info text-dark float-end">Check him now!</a>
                 </div>
               </div>
             </div>
 
-            <div class="d-flex justify-content-center align-content-center" style="color: black;">
-              <h5 class="display-5">KodeWork started by pioneering a better way of working, helping businesses find more flexibility and connecting talent with more opportunities.
-                <br>
-                <br>
-                We are students of KodeGo bootcamp who were tasked to create an outsourcing website to test our skills and knowledge in building a website that is Well Designed and Functional.
+        <div class="card bg-transparent border-0 KodeWork">
+            <h5 class="card-title display-6 p-3"><i class="text-info display-2 fw-semibold">KodeWork</i></h5>
+            <div class="card-body">
+              <h4 class="card-text">
+                <span class="fs-2 text-info-emphasis">Started by pioneering a better way of working, helping businesses find more flexibility and connecting talent with more opportunities.</span>
+              </h4>
+              <h4 class="card-text">
+                <span class="fs-2 text-light"><i>We are students of KodeGo bootcamp who were tasked to create an outsourcing website to test our skills and knowledge in building a website that is Well Designed and Functional.</i></span>
               </h5>
-              <h5 class="display-5"></h5>
+              </h4>
             </div>
+        </div>
+
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-<div class="vh-100 bg-image">
-  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-    <div class="container h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-          <div class="card" style="border-radius: 15px;">
-
-            <div class="text-center">
-                <img src="Images/Logos/KodeWorkLogo.JPG"
-                  style="width: 185px;" alt="logo" class="mt-5">
+  <div class="vh-100 bg-image">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+  
+              <div class="text-center">
+                  <img src="Images/Logos/KodeWorkLogo.JPG"
+                    style="width: 185px;" alt="logo" class="mt-5">
+                </div>
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Have Any Concerns?</h2>
+                <form>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="fName">Full Name</label>
+                    <input type="text" id="fName" class="form-control form-control-lg" />
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control form-control-lg" />
+                  </div>
+  
+                  <div class="form-group mb-4">
+                    <label for="exampleFormControlTextarea1">Concern</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+  
+  
+                  <div class="d-flex justify-content-center" id="register">
+                      <button type="button" class="btn btn-lg btn-block gradient-custom-2 " style="color:whitesmoke;">Submit</button>
+                  </div>
+  
+                </form>
+  
               </div>
-            <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Have Any Concerns?</h2>
-              <form>
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="fName">Full Name</label>
-                  <input type="text" id="fName" class="form-control form-control-lg" />
-                </div>
-
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="email">Email Address</label>
-                  <input type="email" id="email" class="form-control form-control-lg" />
-                </div>
-
-                <div class="form-group mb-4">
-                  <label for="exampleFormControlTextarea1">Concern</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-
-
-                <div class="d-flex justify-content-center" id="register">
-                    <button type="button" class="btn btn-lg btn-block gradient-custom-2 " style="color:whitesmoke;">Submit</button>
-                </div>
-
-              </form>
-
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
+  <div class="container-fluid p-0">
+    <a name="contacts" ></a>
+    <footer class="text-center text-lg-start" style="background-color:beige;">
+    <!-- Section: Social media -->
+    <div class="d-flex justify-content-between p-3 tfooter2" >
+      <!-- Left -->
+      <div class="me-5 me-sm-3 text-light">
+        <span>Get connected with us on social networks:</span>
+      </div>
+
+      <!-- Right -->
+      <div class="">
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-messenger text-light"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-twitter text-light"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-google text-light"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-instagram text-light"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-linkedin text-light"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-github text-light"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Section: Links  -->
+    <div>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold ftext">KODEWORK</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+            <p class="ftext">
+                Our platform makes finding the right service quick and easy. Search for qualified professionals by language or skill set to get exactly what you're looking for.
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold ftext">Useful links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-bookmark-heart-fill ftext"></i>Subscribe</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-shop-window ftext"></i>Web Template</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-truck-front-fill ftext"></i>Services</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-info-circle-fill ftext"></i> Help</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- contact information -->
+            <h6 class="text-uppercase fw-bold ftext">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+            <p class="ftext text-dark"><i class="bi bi-house-heart-fill ftext color"></i> Capiz, Roxas City, Philippines</p>
+            <p class="ftext text-dark"><i class="bi bi-envelope-heart ftext"></i> kodework2023@gmail.com</p>
+            <p class="ftext text-dark"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 901234488012</p>
+            <p class="ftext text-dark"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 987654321123 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row tfooter2 m-0 pt-2">
+     <div class="col-sm-6 copyl text-light"><p >©Copyright All Rights Reserve 2023</p></div>
+      <div class="col-sm-6 copyr text-light"><p >Privacy Policy/Terms of Use</p></div>
+    </div>
+    </footer>
+  </div>
 
   <script src="aboutus.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -160,5 +289,4 @@
     crossorigin="anonymous"></script>
 
 </body>
-
 </html>

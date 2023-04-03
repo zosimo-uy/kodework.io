@@ -28,8 +28,6 @@
     border-radius: 13px;
     box-shadow: 0 0 10px #473d4d;
     opacity: 0.9;
-
-    
 }
 
 .tfooter1{
@@ -42,6 +40,7 @@
     background-color: #302924;
     text-decoration: none;
     font-size: 1.2vw;
+    color: #302924;
 }
 
 /* footer text */

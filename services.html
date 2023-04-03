@@ -7,10 +7,57 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="Style/services.css">
+  <link rel="stylesheet" href="Style/nav_foot.css">
   <title>Services</title>
 </head>
+<style>
 
+  #Landing{
+  background-image: linear-gradient(rgba(255, 255, 255,0.25),
+  rgba(0,0,0,0.85)), url(Images/Services/devcollabs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; font-size: 80px;
+}
+</style>
 <body>
+
+  <nav class="navbar navbar-expand-md bg-white">
+    <div class="container-fluid flex-row-reverse">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="d-flex">
+        <img src="Images/Logos/KodeWorkLogo.JPG" class="logo" alt="" style="height: 45px;">
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="navbar-nav fw-semibold ">
+              
+              <li class="nav-item me-lg-3 text mt-1 ">
+                <a class="nav-link hover1 btn-lg active1" aria-current="page" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " aria-current="page" href="services.html">Services</a>
+              </li>
+            
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="products.html">Products</a>
+              </li>
+
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="aboutus.html">About Us</a>
+              </li>
+
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="login.html">Login</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
 
   <section id="Landing">
     <div class="row ms-4">
@@ -36,7 +83,7 @@
     <div class="row" id="serviceType">
       <div class="col-md-6 my-3">
         <div class="card p-2">
-          <img src="/Images/Services/website.webp" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+          <img src="Images/Services/website.webp" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
               <div class="card-body">
                   <h5 class="card-title text-center p-2 fw-bold">Website</h5>
                   <p class="card-text fs-5">250+ businesses, governmental and non-profit organizations use the websites we've created for corporate presentation and brand building. Our websites have an easy-to-use page editor for dynamic content.</p>
@@ -87,7 +134,7 @@
 
     <div class="col-md-6 my-3">
       <div class="card p-2">
-        <img src="/Images/Services/webapp.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+        <img src="Images/Services/webapp.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
         <div class="card-body">
           <h5 class="card-title text-center p-2 fw-bold">Web App</h5>
           <p class="card-text fs-5">You will find solutions for efficient management of different business activities. We apply smart automation to streamline workflows and integrate corporate apps together for coherent operation.</p>
@@ -139,7 +186,7 @@
 
     <div class="col-md-6 my-3">
       <div class="card p-2">
-        <img src="/Images/Services/webportal.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+        <img src="Images/Services/webportal.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
         <div class="card-body">
           <h5 class="card-title text-center p-2 fw-bold">
             Web portals</h5>
@@ -192,7 +239,7 @@
 
     <div class="col-md-6 my-3">
       <div class="card p-2">
-        <img src="/Images/Services/ecommerce.webp" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+        <img src="Images/Services/ecommerce.webp" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
         <div class="card-body">
           <h5 class="card-title text-center p-2 fw-bold">Ecommerce</h5>
           <p class="card-text fs-5">We multiply business efficiency by using scalable microservices architectures and enabling high automation of all business processes. From entry-level shops for startups to custom ecommerce solutions built.</p>
@@ -260,7 +307,7 @@
             <div class="row">
               <div class="col-md-6 my-3">
                 <div class="card p-2 shadow-md">
-                  <img src="/Images/Services/archi.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/archi.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bolder">Architecture</h5>
                     <p class="card-text fs-5">Architects will plan all functional components and select optimal methods for them. They will also map all API connections within the web solution and with outside systems.</p>
@@ -275,7 +322,7 @@
 
               <div class="col-md-6 my-3">
                 <div class="card p-2">
-                  <img src="/Images/Services/uiux.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/uiux.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">UX and UI Design</h5>
                     <p class="card-text fs-5">We start designing a web app with the analysis of target audience and planning convenient, quick and frictionless user journeys. They join in to wrap the interface into a stylish cover.</p>
@@ -288,7 +335,7 @@
 
               <div class="col-md-6 my-3">
                 <div class="card p-2">
-                  <img src="/Images/Services/integration.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/integration.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Integration</h5>
                     <p class="card-text fs-5">We set up APIs to integrate your web app with corporate or third-party systems and services. App integration ensures immediate data synchronization across systerns.</p>
@@ -301,7 +348,7 @@
 
               <div class="col-md-6 my-3">
                 <div class="card p-2">
-                  <img src="/Images/Services/frontend.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/frontend.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Front-end development</h5>
                     <p class="card-text fs-5">Our front-end developers can implement any design idea and ensure all interface elements work property. We work with all most-used JavaScript frameworks.</p>
@@ -315,7 +362,7 @@
 
               <div class="col-md-6 my-3">
                 <div class="card p-2">
-                  <img src="/Images/Services/backend.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/backend.png" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Back-End development</h5>
                     <p class="card-text fs-5">Our developers accurately implement the business logic of your web app on the back end. We rely on proven frameworks and ensure fast and quality coding in .Net, Java, etc.</p>
@@ -330,7 +377,7 @@
 
               <div class="col-md-6 my-3">
                 <div class="card p-2">
-                  <img src="/Images/Services/testing.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/testing.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Testing and QA</h5>
                     <p class="card-text fs-5">We guarantee that your web solution will function flawlessly, work fast, be user-friendly and secure. We have a team of skilled testing engineers to make promises like that.</p>
@@ -344,7 +391,7 @@
 
               <div class="col-md-6 my-3">
                 <div class="card p-2">
-                  <img src="/Images/Services/business.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/business.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Business Analysis</h5>
                     <p class="card-text fs-5">They focus on the needs of your target audience to perform requirements engineering and outline the scope of the solution. They also bridge the gap between business stakeholders and an IT team to keep all the involved parties.</p>
@@ -357,7 +404,7 @@
 
               <div class="col-md-6 my-3">
                 <div class="card p-2">
-                  <img src="/Images/Services/support.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
+                  <img src="Images/Services/support.jpg" class="card-img-top img-fluid p-2"  alt="WebsiteTemplate">
                   <div class="card-body">
                     <h5 class="card-title fw-bold">Help desk</h5>
                     <p class="card-text fs-5">Providing L1, L2 and L3 support services, we deliver hot-fixes within 24 hours to prevent or resolve any issues in usage, technology and code that may arise. We help you provide high availability and trouble-free functionality of your web app.</p>
@@ -372,6 +419,92 @@
       </div>
     </div>
   </section>
+
+
+  <div class="container-fluid p-0">
+    <a name="contacts" ></a>
+    <footer class="text-center text-lg-start" style="background-color:beige;">
+    <!-- Section: Social media -->
+    <div class="d-flex justify-content-between p-3 tfooter2" >
+      <!-- Left -->
+      <div class="me-5 me-sm-3 text-light">
+        <span>Get connected with us on social networks:</span>
+      </div>
+
+      <!-- Right -->
+      <div >
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-messenger"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Section: Links  -->
+    <div>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold ftext">KODEWORK</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+            <p class="ftext">
+                Our platform makes finding the right service quick and easy. Search for qualified professionals by language or skill set to get exactly what you're looking for.
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold ftext">Useful links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-bookmark-heart-fill ftext"></i>Subscribe</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-shop-window ftext"></i>Web Template</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-truck-front-fill ftext"></i>Services</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-info-circle-fill ftext"></i> Help</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- contact information -->
+            <h6 class="text-uppercase fw-bold ftext">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+            <p class="ftext"><i class="bi bi-house-heart-fill ftext color"></i> Capiz, Roxas City, Philippines</p>
+            <p class="ftext"><i class="bi bi-envelope-heart ftext"></i> kodework2023@gmail.com</p>
+            <p class="ftext"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 901234488012</p>
+            <p class="ftext"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 987654321123 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row tfooter2 m-0 pt-2">
+     <div class="col-sm-6 copyl"><p >©Copyright All Rights Reserve 2023</p></div>
+      <div class="col-sm-6 copyr"><p >Privacy Policy/Terms of Use</p></div>
+    </div>
+  </footer>
+</div>
 
 <script src="service.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

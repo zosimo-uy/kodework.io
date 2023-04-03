@@ -27,14 +27,6 @@
    margin-left: 30px;
  }
 
-#Landing{
-  background-image: linear-gradient(rgba(255, 255, 255,0.25),
-  rgba(0,0,0,0.85)), url(/Images/Services/devcollabs.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; font-size: 80px;
-}
-
 #Services .card, #Fourth .list-group-item, #Services .card-text, #Perks .card, #Perks .list-group-item, #Perks .card-text{
   color: #393430;
   border:none;
