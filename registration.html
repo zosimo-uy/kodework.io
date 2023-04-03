@@ -5,13 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="/Style/register.css">
   <title>Kodework Login Page</title>
 </head>
 <body>
 
-  <nav class="navbar">
-    <a href="" class="navbar-brand Logo"><img src="KodeWorkLogo.JPG" class="img-fluid" alt="KodeWork"></a>
+  <nav class="navbar navbar-expand-md bg-white" ;>
+    <div class="container-fluid flex-row-reverse">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" >
+            <i class="bi bi-list text-dark"></i>
+        </button>
+    
+        <div class="d-flex ">
+        <img src="/Images/Logos/KodeWorkLogo.JPG" class="logo" alt="">
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="navbar-nav fw-semibold ">
+              
+              <li class="nav-item me-lg-3 text mt-1 ">
+                <a class="nav-link hover1 btn-lg active1" aria-current="page" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " aria-current="page" href="services.html">Services</a>
+              </li>
+            
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="products.html">Products</a>
+              </li>
+
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="aboutus.html">About Us</a>
+              </li>
+
+              <li class="nav-item me-lg-3 text mt-1">
+                <a class="nav-link hover1 btn-lg " href="login.html">Login</a>
+              </li>
+            </ul>
+        </div>
+    </div>
   </nav>
 
 <section id="Home"class="vh-100 bg-image"
@@ -30,45 +64,52 @@
               <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
 
-              <form>
-
-                <div class="form-outline mb-4">
-                  <input type="text" id="fName" class="form-control form-control-lg" />
+              <form action="" name="Formfill" onsubmit="return validation()" >
+                <p id="error"></p>
+                <div class="form-outline mb-4 fName">
                   <label class="form-label" for="fName">First Name</label>
+                  <i class='bx bxs-user' ></i>
+                  <input type="text" name="fname" id="fName" class="form-control form-control-lg" />
                 </div>
 
-                <div class="form-outline mb-4">
-                    <input type="text" id="lName" class="form-control form-control-lg" />
-                    <label class="form-label" for="lName">Last Name</label>
+                <div class="form-outline mb-4 lName">
+                  <label class="form-label" for="lName">Last Name</label>
+                  <i class='bx bxs-user' ></i>
+                  <input type="text" name="lName" id="lName" class="form-control form-control-lg" />
                   </div>
 
-                <div class="form-outline mb-4">
-                  <input type="email" id="email" class="form-control form-control-lg" />
+                <div class="form-outline mb-4 email">
                   <label class="form-label" for="email">Email Address</label>
+                  <i class='bx bxs-envelope'></i>
+                  <input type="email" name="email" id="email" class="form-control form-control-lg" />
                 </div>
 
-                <div class="form-outline mb-4">
-                  <input type="password" id="password" class="form-control form-control-lg" />
+                <div class="form-outline mb-4 password">
                   <label class="form-label" for="password">Password</label>
+                  <i class='bx bxs-lock-alt' ></i>
+                  <input type="password" name="password" id="password" class="form-control form-control-lg" />
                 </div>
 
-                <div class="form-outline mb-4">
-                  <input type="password" id="cPassword" class="form-control form-control-lg" />
+                <div class="form-outline mb-4 cPassword">
                   <label class="form-label" for="cPassword">Confirm password</label>
+                  <i class='bx bxs-lock-alt' ></i>
+                  <input type="password" name="cPassword" id="cPassword" class="form-control form-control-lg" />
                 </div>
 
                 <div class="form-check d-flex justify-content-center mb-5">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <input class="form-check-input me-2" name="agree" type="checkbox" value="" id="form2Example3cg" />
                   <label class="form-check-label" for="form2Example3g">
                     I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
                   </label>
                 </div>
 
                 <div class="d-flex justify-content-center" id="register">
-                    <button type="button" class="btn btn-lg btn-block gradient-custom-2 " style="color:whitesmoke;">Register</button>
+                    <input class="gradient-custom-2 btn" onclick="save()" type="submit" value="Register" style="color: whitesmoke; border-radius: 10px; padding: 10px; font-size: 1.3rem; ">
                 </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.html"
+                <p id="success"></p>
+
+                <p class="text-center text-muted mt-3 mb-0">Have already an account? <a href="login.html"
                     class="fw-bold text-body"><u>Login here</u></a></p>
 
               </form>
@@ -80,8 +121,92 @@
     </div>
   </div>
 </section>
+<div class="container-fluid  p-0">
+  <a name="contacts" ></a>
+  <footer class="text-center text-lg-start" style="background-color:beige;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-between p-3 tfooter2" >
+    <!-- Left -->
+    <div class="me-5 me-sm-3">
+      <span style="color: whitesmoke;">Get connected with us on social networks:</span>
+    </div>
 
-  <script src="index.js"></script>
+    <!-- Right -->
+    <div >
+      <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+        <i class="bi bi-messenger"></i>
+      </a>
+      <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+        <i class="bi bi-google"></i>
+      </a>
+      <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="" class="tfooter2 me-3 me-sm-2 hover2">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section: Links  -->
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold ftext">KODEWORK</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+          <p class="ftext">
+              Our platform makes finding the right service quick and easy. Search for qualified professionals by language or skill set to get exactly what you're looking for.
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold ftext">Useful links</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+          <p>
+            <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-bookmark-heart-fill ftext"></i></i> Subscribe</a>
+          </p>
+          <p>
+            <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-shop-window ftext"></i>Web Template</a>
+          </p>
+          <p>
+            <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"> <i class="bi bi-truck-front-fill ftext"></i>Services</a>
+          </p>
+          <p>
+            <a href="#" class="text-dark hover3 ftext" style="text-decoration: none;"><i class="bi bi-info-circle-fill ftext"></i> Help</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- contact information -->
+          <h6 class="text-uppercase fw-bold ftext">Contact</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto footer1"/>
+          <p class="ftext"><i class="bi bi-house-heart-fill ftext color"></i> Capiz, Roxas City, Philippines</p>
+          <p class="ftext"><i class="bi bi-envelope-heart ftext"></i> kodework2023@gmail.com</p>
+          <p class="ftext"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 901234488012</p>
+          <p class="ftext"><i class="bi bi-telephone-inbound-fill ftext"></i> +63 987654321123 </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright -->
+  <div class="row tfooter2 m-0 pt-2">
+   <div class="col-sm-6 copyl"><p style="color: whitesmoke;">©Copyright All Rights Reserve 2023</p></div>
+    <div class="col-sm-6 copyr"><p style="color: whitesmoke;">Privacy Policy/Terms of Use</p></div>
+  </div>
+</footer>
+</div>
+
+  <script src="registration.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
