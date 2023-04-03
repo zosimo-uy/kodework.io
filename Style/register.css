@@ -3,8 +3,13 @@
     text-align: center;
 }
 
-.logo {
-    width: 15vw;
+.active{
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #945464;
+    opacity: 0.9;
+    font-size: large;
 }
 
 /* hover navigation */
@@ -12,10 +17,11 @@
     background-color: #302924;
     padding: 5px;
     border-radius: 10px;
-    color:white;
+    color: white;
     box-shadow: 0 0 4px #945464;
     opacity: 0.9;
     font-size: large;
+    transition: 0.7s;
 }
 
 /* hover footer social media */
@@ -32,8 +38,6 @@
     border-radius: 13px;
     box-shadow: 0 0 10px #473d4d;
     opacity: 0.9;
-
-    
 }
 
 .tfooter1{
@@ -46,6 +50,7 @@
     background-color: #302924;
     text-decoration: none;
     font-size: 1.2vw;
+    color: #302924;
 }
 
 /* footer text */
@@ -64,6 +69,27 @@
 }
 
 
+@media only screen and (min-width: 360px) {
+    .ftext {
+        font-size: small;
+    }
+
+    .copyr {
+        text-align: center;
+        font-size: large;
+    }
+
+    .copyl {
+        text-align: center;
+        font-size: large;
+    }
+
+    .tfooter2{
+        font-size: medium;
+    }
+
+}
+
 @media only screen and (min-width: 768px) {
     .ftext {
         font-size: small;
@@ -71,10 +97,16 @@
 
     .copyr {
         text-align: right;
+        font-size: large;
     }
 
     .copyl {
         text-align: left;
+        font-size: large;
+    }
+
+    .tfooter2{
+        font-size: medium;
     }
 
 }
@@ -86,13 +118,13 @@
 
     .copyr {
         text-align: right;
+        font-size: large;
     }
 
     .copyl {
         text-align: left;
+        font-size: large;
     }
-
-   
 }
 
 body{

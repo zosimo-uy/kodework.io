@@ -3,15 +3,25 @@
     text-align: center;
 }
 
+.active{
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #945464;
+    opacity: 0.9;
+    font-size: large;
+}
+
 /* hover navigation */
 .hover1:hover{
     background-color: #302924;
     padding: 5px;
     border-radius: 10px;
-    color:white;
+    color: white;
     box-shadow: 0 0 4px #945464;
     opacity: 0.9;
     font-size: large;
+    transition: 0.7s;
 }
 
 /* hover footer social media */
