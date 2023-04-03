@@ -59,6 +59,27 @@
 }
 
 
+@media only screen and (min-width: 360px) {
+    .ftext {
+        font-size: small;
+    }
+
+    .copyr {
+        text-align: center;
+        font-size: large;
+    }
+
+    .copyl {
+        text-align: center;
+        font-size: large;
+    }
+
+    .tfooter2{
+        font-size: medium;
+    }
+
+}
+
 @media only screen and (min-width: 768px) {
     .ftext {
         font-size: small;
@@ -66,10 +87,16 @@
 
     .copyr {
         text-align: right;
+        font-size: large;
     }
 
     .copyl {
         text-align: left;
+        font-size: large;
+    }
+
+    .tfooter2{
+        font-size: medium;
     }
 
 }
@@ -81,10 +108,12 @@
 
     .copyr {
         text-align: right;
+        font-size: large;
     }
 
     .copyl {
         text-align: left;
+        font-size: large;
     }
 
    
