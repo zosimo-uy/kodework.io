@@ -26,16 +26,6 @@ section{
   margin-left: 30px;
 }
 
-#Home{
-  background-image: linear-gradient(rgba(0, 0, 0,0.05),
-  rgba(0,0,0,0.35)), url(Images//Homepage/Developer1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; 
-  font-size: 80px;
-  color: whitesmoke;
-}
-
 #Second{
   color: whitesmoke;
   min-height: 75vh;
@@ -45,14 +35,6 @@ section{
  margin-left: 12%;
 }
 
-#Third{
-background-image: linear-gradient(rgba(0, 0, 0,0.30),
-rgba(0,0,0,0.30)), url(Images/HomePage/dev3.jpg);;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-
-}
 
 #Third .card, #Third .card-header{
   background: rgba(0,0,0,0.02);
