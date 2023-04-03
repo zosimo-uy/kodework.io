@@ -28,7 +28,7 @@
    
    #Home{
      background-image: linear-gradient(rgba(0, 0, 0,0.05),
-     rgba(0,0,0,0.35)), url(/Images/AboutUS/about.jpg);
+     rgba(0,0,0,0.35)), url(Images/AboutUS/about.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed; 
@@ -45,7 +45,7 @@
    
    #Third{
    background-image: linear-gradient(rgba(0, 0, 0,0.15),
-   rgba(0,0,0,0.85)), url(/Images/HomePage/dev3.jpg);;
+   rgba(0,0,0,0.85)), url(Images/HomePage/dev3.jpg);;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;

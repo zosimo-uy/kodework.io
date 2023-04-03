@@ -28,7 +28,7 @@ section{
 
 #Home{
   background-image: linear-gradient(rgba(0, 0, 0,0.05),
-  rgba(0,0,0,0.35)), url(/Images//Homepage/Developer1.jpg);
+  rgba(0,0,0,0.35)), url(Images//Homepage/Developer1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
@@ -47,7 +47,7 @@ section{
 
 #Third{
 background-image: linear-gradient(rgba(0, 0, 0,0.30),
-rgba(0,0,0,0.30)), url(/Images/HomePage/dev3.jpg);;
+rgba(0,0,0,0.30)), url(Images/HomePage/dev3.jpg);;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
