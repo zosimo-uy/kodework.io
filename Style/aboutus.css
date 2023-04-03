@@ -28,7 +28,7 @@
    
    #Home{
      background-image: linear-gradient(rgba(0, 0, 0,0.05),
-     rgba(0,0,0,0.35)), url(/Images//Homepage/Developer1.jpg);
+     rgba(0,0,0,0.35)), url(/Images/AboutUS/about.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed; 
@@ -68,30 +68,9 @@
      scale: 110%;
    }
    
-   #Fourth, #Fifth{
-     background-color: #FFFF;
-     color: #393430;
+  #Fourth{
+     background-color: #393430;
    }
-   
-   #Fourth .row, #Fifth .row{
-     background: #fff;
-   }
-   
-   #Fourth .card, #Fourth .list-group-item, #Fourth .card-text, #Fifth .card, #Fifth .list-group-item, #Fifth .card-text{
-     color: #393430;
-   }
-
-   
-   #Fourth .card-header{
-     color: rgb(8, 8, 8);
-     text-decoration: none;
-   }
-   #Fourth .bNone, #Fifth .bNone{
-     border: none;
-   }
-
-   
-   
    
    
    .gradient-custom-2 {
